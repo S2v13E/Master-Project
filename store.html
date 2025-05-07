@@ -128,7 +128,7 @@
         <div class="product-info">
             <h3>TRUE TREE</h3>
             <p>Описание товара 1</p>
-            <button>Купить за 199р.</button>
+            <button onclick="redirectToPayment(199)">Купить за 199р.</button>
         </div>
     </div>
     <div class="product">
@@ -136,7 +136,7 @@
         <div class="product-info">
             <h3>GROB</h3>
             <p>Описание товара 2</p>
-            <button>Купить за 299р.</button>
+            <button onclick="redirectToPayment(299)">Купить за 299р.</button>
         </div>
     </div>
     <div class="product">
@@ -144,7 +144,7 @@
         <div class="product-info">
             <h3>Nazeriks and obelisk</h3>
             <p>Описание товара 3</p>
-            <button>Купить за 599р.</button>
+            <button onclick="redirectToPayment(599)">Купить за 599р.</button>
         </div>
     </div>
     <div class="product">
@@ -152,7 +152,7 @@
         <div class="product-info">
             <h3>Peugeot</h3>
             <p>Описание товара 4</p>
-            <button>Купить за 1099р.</button>
+            <button onclick="redirectToPayment(1099)">Купить за 1099р.</button>
         </div>
     </div>
     <footer>
@@ -163,5 +163,13 @@
         </div>
         <div class="copyright">RoyalGlory © — 2025 ИП — Все права защищены.</div>
     </footer>
+    <script>
+        function redirectToPayment(amount) {
+            window.location.href = `payment.html?amount=${amount}`;
+        }
+    </script>
+</body>
+</html>
+
 </body>
 </html>

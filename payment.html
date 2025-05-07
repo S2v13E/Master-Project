@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RoyalGlory - Оплата</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .payment-container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .payment-container h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .payment-container p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .payment-container button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            background-color: #000;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="payment-container">
+        <h1>Оплата</h1>
+        <p>Итоговая сумма: <span id="totalAmount"></span> рублей</p>
+        <button onclick="completePayment()">Оплатить</button>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const amount = urlParams.get('amount');
+            document.getElementById('totalAmount').textContent = amount;
+        });
+
+        function completePayment() {
+            alert('Оплата успешно завершена!');
+            window.location.href = 'index.html'; // Перенаправление на главную страницу
+        }
+    </script>
+</body>
+</html>
