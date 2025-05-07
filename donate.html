@@ -127,24 +127,25 @@
     <div class="donate-container">
         <div class="donate-option">
             <input type="text" value="100р." readonly>
-            <button>Пожертвовать</button>
+            <button onclick="redirectToPayment(100)">Пожертвовать</button>
         </div>
         <div class="donate-option">
             <input type="text" value="500р." readonly>
-            <button>Пожертвовать</button>
+            <button onclick="redirectToPayment(500)">Пожертвовать</button>
         </div>
         <div class="donate-option">
             <input type="text" value="1000р." readonly>
-            <button>Пожертвовать</button>
+            <button onclick="redirectToPayment(1000)">Пожертвовать</button>
         </div>
         <div class="donate-option">
             <input type="text" value="5000р." readonly>
-            <button>Пожертвовать</button>
+            <button onclick="redirectToPayment(5000)">Пожертвовать</button>
         </div>
         <div class="custom-donate">
-            <input type="text" placeholder="Ваша сумма">
-            <button>Пожертвовать</button>
+            <input type="text" placeholder="Ваша сумма" id="customAmount">
+            <button onclick="redirectToPaymentCustom()">Пожертвовать</button>
         </div>
+    </div>
     </div>
     <footer>
         <div class="social-icons">
@@ -154,5 +155,19 @@
         </div>
         <div class="copyright">RoyalGlory © — 2025 ИП — Все права защищены.</div>
     </footer>
+    <script>
+        function redirectToPayment(amount) {
+            window.location.href = `payment.html?amount=${amount}`;
+        }
+
+        function redirectToPaymentCustom() {
+            const customAmount = document.getElementById('customAmount').value;
+            if (customAmount) {
+                window.location.href = `payment.html?amount=${customAmount}`;
+            } else {
+                alert('Введите сумму доната.');
+            }
+        }
+    </script>
 </body>
 </html>
