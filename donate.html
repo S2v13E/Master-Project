@@ -8,7 +8,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #333;
+            background-color:   #882129;
             color: white;
         }
 
@@ -18,11 +18,17 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            z-index: 10;
+        
         }
 
         .logo {
+            position: absolute;
             font-size: 24px;
             color: white;
+            top: 50px;
+            left: 500px;
+            z-index: 10;
         }
 
         nav ul {
@@ -30,63 +36,47 @@
             margin: 0;
             padding: 0;
             display: flex;
+            z-index: 10px;
         }
 
         nav ul li {
-            margin-right: 20px;
+            margin-right: 50px;
+            z-index: 10px;
         }
 
         nav ul li a {
             color: white;
             text-decoration: none;
+            z-index: 10px;
         }
 
         .start-game-btn {
-            background-color: #000;
+            position: absolute;
+            background-color: #c5141d;
             color: white;
             padding: 10px 20px;
             border-radius: 5px;
             text-decoration: none;
+            z-index: 10px;
+            top: 55px;
+            left: 1230px;
         }
 
-        .donate-container {
+        .main-content {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            margin-top: 50px;
+            height: 80vh;
         }
 
-        .donate-option {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
-        .donate-option input[type="text"] {
-            width: 100px;
-            padding: 10px;
-            margin-right: 10px;
-            border-radius: 5px;
-            border: none;
-            background-color: #444;
+        .main-content h1 {
+            font-size: 60px;
             color: white;
-        }
-
-        .donate-option button {
-            padding: 10px 20px;
-            border-radius: 5px;
-            border: none;
-            background-color: #000;
-            color: white;
-            cursor: pointer;
-        }
-
-        .custom-donate {
-            margin-top: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
 
         footer {
-            background-color: #333;
+            background-color: #882129;
             color: white;
             padding: 10px 20px;
             display: flex;
@@ -95,7 +85,11 @@
         }
 
         .social-icons {
+            position: absolute;
             display: flex;
+            top: 1%;
+            left: 700px;
+            z-index: 10;
         }
 
         .social-icons a {
@@ -105,55 +99,220 @@
         }
 
         .copyright {
+            position: absolute;
             font-size: 12px;
+            left: 1100px;
+            z-index: 10;
         }
+        .rg {
+            position: absolute;
+            top: 250px;
+            left: 400;
+        }
+        .hotbar {
+            position: absolute;
+            top: 20px;
+            left: 475px;
+            z-index: -100;
+        
+        }
+        .hotbarTXT{
+            position: absolute;
+            top: 65px;
+            left: 600px;
+
+            
+        }
+        .sqare{
+            position: absolute;
+            background-color: #c5141d;
+            width: 30px;
+            height: 30px;
+            background: red;
+            z-index: -1;
+            
+            
+
+        }
+        .lowbar{position: absolute;
+                
+                top: 875px;
+                left: 0px;
+                width: 1825px;
+                height: 75px;
+                color: #ffffff;
+                z-index: 1;
+                
+        }
+        .centr{
+            position: absolute;
+            top: 200px;
+            z-index: -1;
+        }
+        .component{
+            position: absolute;
+            left: -200px;
+            top: 450px;
+            z-index: 4;
+
+        }
+        .component2{
+            position: absolute;
+            width: 2000px;
+            height: 300px;
+            left: 500px;
+            z-index: 4;
+        }
+        .loglow{
+            position: absolute;
+            top: 903px;
+            left: 500px;
+            z-index: 10;
+        }
+        .loglow2{
+            position: absolute;
+            top: 895px;
+            left: 400px;
+            z-index: 10;
+        }
+        .r{
+            position: absolute; 
+            top: 54px;
+            left: 764px;
+        }
+        .line{
+            position: absolute;
+            left: 350px;
+            top: 879px;
+            z-index: 10;
+        } 
+        .donate-container{
+            display: flex; 
+            flex-direction: column;
+       
+        }
+        .donate-option{
+            position: relative;
+            margin-bottom: 40px;
+            top: 210px;
+            left: 1145px;    
+            z-index: 10;
+
+
+        }
+        .rsdx{
+            position: relative ;
+            z-index: -1;
+            top: 150px;
+            left: 450px;
+            
+        }
+        button{
+            background-color: rgb(100, 10, 10);
+            color: azure;
+            padding: 10px 70px;
+            cursor: pointer;
+            border-radius: 70px;
+            z-index: 10;
+
+            
+        }
+
+        .custom-input{
+            position: absolute;
+            background-color: #000000;
+            width: 900px;
+            height: 50px;
+            left: -675px;
+            top: -15px;
+            -webkit-appearance: none; /* для Chrome, Safari */
+  -moz-appearance: none; /* для Firefox */
+  appearance: none; /* стандарт */
+  
+  /* далее ваши стили */
+  padding: 10px;
+  border: 2px solid #080808;
+  border-radius: 20px;
+  background-color: #1d1d1d;
+  font-size: 36px;
+  z-index: -1;
+
+            
+
+        }
+
+    .low{
+        position: absolute;
+        top: -450px;
+        left: -59px;
+    }
+
+        
+       
+        
+       
     </style>
 </head>
 <body>
+    <img class="r" src="images/Rectangle 73.png">
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="RG Logo" width="49" height="44">
+            
+            <img src="images/logo.png" alt="RG Logo" width="49" height="44" >
+            
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">О нас</a></li>
+        
+        <nav class="hotbarTXT">
+            <ul >
+                <li><a href="#"  style="color: #ffffff";> О нас </a></li>
                 <li><a href="map.html">Карта</a></li>
-                <li><a href="#" style="color: #ff0000;">Донат</a></li>
+                <li><a href="donate.html">Донат</a></li>
                 <li><a href="store.html">Магазин</a></li>
             </ul>
+            
         </nav>
+        <h3 class="hotbar"><img src="images/R.png" alt="R3"></h3>
         <a href="#" class="start-game-btn">Начать игру</a>
-    </header>
+        
+    </header>   
+
     <div class="donate-container">
-        <div class="donate-option">
-            <input type="text" value="100р." readonly>
+        <div class="donate-option" >
+            <input type="text" value="100р." readonly style="color: #ffffff;" class="custom-input">
             <button onclick="redirectToPayment(100)">Пожертвовать</button>
         </div>
+
         <div class="donate-option">
-            <input type="text" value="500р." readonly>
+            <input type="text" value="500р." readonly style="color: #ffffff;" class="custom-input">
             <button onclick="redirectToPayment(500)">Пожертвовать</button>
         </div>
+
         <div class="donate-option">
-            <input type="text" value="1000р." readonly>
+            <input type="text" value="1000р." readonly style="color: #ffffff;" class="custom-input">
             <button onclick="redirectToPayment(1000)">Пожертвовать</button>
         </div>
+
         <div class="donate-option">
-            <input type="text" value="5000р." readonly>
+            <input type="text" value="5000р." readonly style="color: #ffffff;" class="custom-input">
             <button onclick="redirectToPayment(5000)">Пожертвовать</button>
         </div>
-        <div class="custom-donate">
-            <input type="text" placeholder="Ваша сумма" id="customAmount">
+
+        <div class="donate-option">
+            <input type="text" placeholder="Ваша сумма" id="customAmount" style="color: #ffffff;" class="custom-input">
             <button onclick="redirectToPaymentCustom()">Пожертвовать</button>
         </div>
     </div>
-    </div>
-    <footer>
+    <footer class="lowbar">
+        <img src="images/Rectangle 74.png" alt="R3" class="low">
+
         <div class="social-icons">
-            <a href="#"><img src="https://via.placeholder.com/32x32" alt="YouTube"></a>
-            <a href="#"><img src="https://via.placeholder.com/32x32" alt="VK"></a>
-            <a href="#"><img src="https://via.placeholder.com/32x32" alt="Telegram"></a>
+            <a href="#"><img src="images/yo.png" alt="YouTube"></a>
+            <a href="#"><img src="images/vk.png" alt="VK"></a>
+            <a href="#"><img src="images/tg.png" alt="Telegram"></a>
         </div>
         <div class="copyright">RoyalGlory © — 2025 ИП — Все права защищены.</div>
+        
+
     </footer>
     <script>
         function redirectToPayment(amount) {
